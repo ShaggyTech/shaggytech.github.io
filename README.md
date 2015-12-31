@@ -1,4 +1,4 @@
-My Portfolio
+My Portfolio and front page of ShaggyTech.com
 =============
-See it live at [http://shaggytech.github.io/portfolio](http://shaggytech.github.io/portfolio)
+[http://shaggytech..com](http://shaggytech.com)
 =============
