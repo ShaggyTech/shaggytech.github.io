@@ -345,6 +345,13 @@ body {
     padding: 20px;
 }
 
+.project-description a {
+}
+
+.project-description a:hover {
+    text-decoration: none;
+    text-shadow: 0 0 1px #999;
+}
 
 /* ----- Footer / Contact ----- */
 
