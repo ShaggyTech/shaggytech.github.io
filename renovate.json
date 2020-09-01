@@ -4,4 +4,8 @@
   ],
   "baseBranches": ["staging"],
   "labels": ["dependencies"]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master
