@@ -1,0 +1,70 @@
+{
+  "name": "shaggytech.com",
+  "version": "1.0.0",
+  "private": false,
+  "author": "Brandon Eichler <github.com/shaggytech>",
+  "license": "MIT",
+  "description": "Homepage of shaggytech.com, built with Vue + Nuxt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShaggyTech/shaggytech.github.io.git",
+    "homepage": "https://github.com/ShaggyTech/shaggytech.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/ShaggyTech/shaggytech.github.io/issues"
+  },
+  "homepage": "https://www.shaggytech.com",
+  "scripts": {
+    "dev": "ts-node --project server/tsconfig.json server/server-dev.ts",
+    "build": "nuxt-ts build",
+    "start": "cross-env NODE_ENV=production ts-node --project 'server/tsconfig.json' server/server-prod.ts",
+    "generate": "nuxt-ts generate",
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "test": "jest -c ./test/config/jest.config.js",
+    "test:watch": "jest -c ./test/config/jest.config.js --watch --onlyChanged",
+    "test:watch-all": "jest -c ./test/config/jest.config.js --watchAll",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt-ts build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt-ts generate"
+  },
+  "lint-staged": {
+    "*.{ts,js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^1.0.0",
+    "@nuxtjs/pwa": "^3.0.2",
+    "@vue/composition-api": "latest",
+    "nuxt-edge": "latest",
+    "nuxt-typed-vuex": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/types": "latest",
+    "@nuxt/typescript-build": "latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "@nuxtjs/eslint-module": "latest",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "@types/jest": "latest",
+    "@types/node": "latest",
+    "@vue/test-utils": "latest",
+    "babel-core": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-loader": "latest",
+    "eslint-plugin-nuxt": "latest",
+    "eslint-plugin-prettier": "latest",
+    "eslint-plugin-vue": "^6.2.2",
+    "express": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "lint-staged": "latest",
+    "prettier": "latest",
+    "ts-jest": "latest",
+    "vue-jest": "latest"
+  }
+}
