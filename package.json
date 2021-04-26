@@ -35,7 +35,7 @@
     }
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "^1.0.0",
+    "@nuxt/typescript-runtime": "^2.1.0",
     "@nuxtjs/pwa": "^3.0.2",
     "@vue/composition-api": "latest",
     "nuxt-edge": "latest",
